@@ -3,9 +3,12 @@ import styled from 'styled-components';
 
 // Section container
 const ProjectsSection = styled.section`
-  background-color: #f0f0f5;
+  // background: linear-gradient(135deg, #fad0c4 0%, #4ca1af 100%);
+  // background: linear-gradient(135deg, #F5F5DC 0%, #333 100%);
+  background: linear-gradient(135deg, #F5F5DC 0%, #4ca1af 100%);
   padding: 4em 2em;
   text-align: center;
+  font-family: 'Pacifico', cursive;
 `;
 
 // Section title
@@ -27,7 +30,6 @@ const ProjectsGrid = styled.div`
 // Individual project card with dynamic hover effects
 const ProjectCard = styled.div`
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-  font-family: 'Pacifico', cursive;
   border-radius: 15px;
   padding: 2em;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -104,6 +106,7 @@ const Projects = () => {
       description: 'An automated CI/CD pipeline implementation using Jenkins and Docker.',
       link: 'https://github.com/nanu1605/cicd-pipeline',
     },
+    
     // Add more projects here...
   ];
 

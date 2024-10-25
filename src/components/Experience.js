@@ -18,7 +18,8 @@ const ParticleContainer = styled.div`
 // Section container for experience
 const ExperienceSection = styled.section`
   position: relative;
-  background: linear-gradient(135deg, #333 0%, #fad0c4 100%);
+  background: linear-gradient(135deg, #F5F5DC 0%, #4ca1af 100%);
+  // background: linear-gradient(135deg, #F5F5DC 0%, #333 100%);
   padding: 4em 2em;
   text-align: center;
   overflow: hidden;
@@ -28,7 +29,7 @@ const ExperienceSection = styled.section`
 const Title = styled.h1`
   font-size: 3em;
   font-family: 'Pacifico', cursive;
-  color: #fff;
+  color: #333;
   margin-bottom: 2em;
   text-transform: uppercase;
   letter-spacing: 3px;

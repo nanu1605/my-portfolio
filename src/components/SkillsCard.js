@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // Styled container for the card
 const CardContainer = styled.div`
-  width: 240px; /* Initial width */
-  height: 260px; /* Initial height */
+  width: 240px;
+  height: 260px;
   perspective: 1000px;
-  margin: 1.5em; /* Spacing between cards */
+  margin: 1.5em;
 `;
 
 const CardInner = styled(motion.div)`
@@ -15,7 +15,7 @@ const CardInner = styled(motion.div)`
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s, scale 0.6s; /* Added scale transition for smooth resizing */
+  transition: transform 0.3s, scale 0.3s; /* Reduced transition time for faster flip */
   transform: ${({ flipped }) => (flipped ? 'rotateY(180deg) scale(1.1)' : 'rotateY(0) scale(1)')}; /* Scale up on flip */
 `;
 
@@ -56,7 +56,7 @@ const SkillList = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 100%; /* Full width of the back side */
+  width: 100%;
   text-align: center;
 `;
 
@@ -65,20 +65,16 @@ const SkillItem = styled.li`
 `;
 
 export const SkillsCard = ({ title, skills, color }) => {
-  const [flipped, setFlipped] = useState(false);
-
-  const toggleFlip = () => {
-    setFlipped(!flipped);
-  };
-
   return (
-    <CardContainer onClick={toggleFlip}>
-      <CardInner flipped={flipped}>
+    <CardContainer>
+      <CardInner
+        whileHover={{ rotateY: 180, scale: 1.1 }} /* Flip on hover */
+      >
         {/* Front side of the card */}
         <CardFront color={color}>
           {title}
         </CardFront>
-        
+
         {/* Back side of the card */}
         <CardBack color={color}>
           <SkillList>
