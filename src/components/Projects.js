@@ -93,20 +93,29 @@ const Projects = () => {
   const projectData = [
     {
       title: 'Virtual Dressing Room',
-      description: 'A virtual try-on experience powered by augmented reality to simulate outfits.',
+      description: 'A virtual try-on experience powered by augmented reality to simulate outfits',
       link: 'https://github.com/nanu1605/virtual-dressing-room',
     },
     {
+      title: 'My Portfolio',
+      description: 'An interactive and animated developer portfolio showcasing projects, skills, and experience with a modern, responsive design',
+      link: 'https://github.com/nanu1605/my-portfolio',
+    },
+    {
       title: 'Attendance System',
-      description: 'A smart attendance system utilizing facial recognition for automated check-ins.',
+      description: 'A smart attendance system utilizing facial recognition for automated check-ins',
       link: 'https://github.com/nanu1605/attendance-system',
     },
     {
-      title: 'CI/CD Pipeline Automation',
-      description: 'An automated CI/CD pipeline implementation using Jenkins and Docker.',
-      link: 'https://github.com/nanu1605/cicd-pipeline',
+      title: 'Rain Forecast using AUTO ARIMA Model',
+      description: 'The machine learning model uses Linear Regression Model to forecast rain in a certain area',
+      link: 'https://github.com/nanu1605/Rain-forecast-using-AUTO-ARIMA-model',
     },
-    
+    {
+      title: 'Basic Calculator Flutter App',
+      description: 'Calculator app in Flutter for basic arithmetic on mobile, web, and desktop',
+      link: 'https://github.com/nanu1605/flutter_calculator',
+    },
     // Add more projects here...
   ];
 
