@@ -28,31 +28,8 @@ This portfolio was built using modern web development technologies and tools. He
   - **Particles.js** - To add the fancy particle effect background.
   
 - **Deployment:**
-  - [Netlify](https://www.netlify.com/) - Used for deploying the website live on the web (you can replace this with your deployment service).
-
-## 📂 Folder Structure
-Here’s a quick overview of the folder structure:
-
-my-portfolio/
-├── public/
-│   ├── index.html
-├── src/
-│   ├── components/
-│   │   ├── About.js
-│   │   ├── Contact.js
-│   │   ├── Experience.js
-│   │   ├── Home.js
-│   │   ├── Projects.js
-│   │   ├── Skills.js
-│   │   ├── SkillsCard.js
-│   │   └── SkillsGrid.js
-│   ├── App.js
-│   ├── index.js
-│   └── styles.js
-├── package.json
-└── README.md
-
-
+  - [Vercel](https://vercel.com/) - Used for deploying the website live on the web
+  
 ## 🚀 How to Run This Project Locally
 
 1. **Clone the repository**:
