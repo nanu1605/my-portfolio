@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   HomeSection,
   HeroTitle,
@@ -7,6 +8,8 @@ import {
   Quote,
   ButtonContainer,
   NavButton,
+  FloatingIcon,
+  floating,
 } from "./Styles/HomeStyles";
 import { Link } from "react-scroll";
 import Me from "../assets/Me.jpg";
@@ -14,7 +17,18 @@ import Me from "../assets/Me.jpg";
 const Home = () => {
   return (
     <HomeSection>
-      <AnimatedPhoto src={Me} alt="Tanishq Jain" />
+      <FloatingIcon style={{ top: '15%', left: '10%' }}>🐳</FloatingIcon> {/* Docker icon */}
+      <FloatingIcon style={{ top: '20%', right: '10%' }}>☁️</FloatingIcon> {/* Cloud icon */}
+      <FloatingIcon style={{ bottom: '15%', left: '15%' }}>⚙️</FloatingIcon> {/* Gear icon */}
+      <FloatingIcon style={{ bottom: '20%', right: '15%' }}>📊</FloatingIcon> {/* Analytics icon */}
+
+      <AnimatedPhoto
+        src={Me}
+        alt="Tanishq Jain"
+        initial="initial"
+        animate="animate"
+        variants={floating}
+      />
       <HeroTitle>Hi, I'm Tanishq Jain</HeroTitle>
       <HeroSubtitle>DevOps Engineer | Full-Stack Developer</HeroSubtitle>
       <Quote

@@ -100,3 +100,17 @@ export const NavButton = styled(motion.div)`
     left: 150%;
   }
 `;
+
+export const FloatingIcon = styled(motion.div)`
+  position: absolute;
+  font-size: 1.5em;
+  color: #fff;
+  opacity: 0.7;
+`;
+export const floating = {
+  initial: { y: 0 },
+  animate: {
+    y: [0, -10, 0],
+    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+  },
+};
