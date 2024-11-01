@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CardContainer,
   CardInner,
@@ -9,9 +9,15 @@ import {
 } from "./Styles/SkillsStyles";
 
 export const SkillsCard = ({ title, skills, color }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    setIsFlipped((prev) => !prev);
+  };
+
   return (
-    <CardContainer>
-      <CardInner whileHover={{ rotateY: 180, scale: 1.1 }} /* Flip on hover */>
+    <CardContainer onClick={handleCardClick}>
+      <CardInner flipped={isFlipped}>
         {/* Front side of the card */}
         <CardFront color={color}>{title}</CardFront>
 

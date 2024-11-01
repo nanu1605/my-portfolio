@@ -18,26 +18,26 @@ export const Title = styled.h1`
 `;
 
 //SkillsCard.js
-// Styled container for the card
 export const CardContainer = styled.div`
   width: 240px;
   height: 260px;
   perspective: 1000px;
   margin: 1.5em;
+  cursor: pointer;
 `;
 
+// Inner card with conditional rotation and scale effect for flip
 export const CardInner = styled(motion.div)`
   width: 100%;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.3s, scale 0.3s; /* Reduced transition time for faster flip */
+  transition: transform 0.6s;
   transform: ${({ flipped }) =>
-    flipped
-      ? "rotateY(180deg) scale(1.1)"
-      : "rotateY(0) scale(1)"}; /* Scale up on flip */
+    flipped ? "rotateY(180deg) scale(1.1)" : "rotateY(0) scale(1)"};
 `;
 
+// Front of the card
 export const CardFront = styled.div`
   position: absolute;
   width: 100%;
@@ -54,13 +54,13 @@ export const CardFront = styled.div`
   padding: 20px;
 `;
 
+// Back of the card
 export const CardBack = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
   font-family: "Pacifico", cursive;
-  background-color: ${({ color }) =>
-    color}; /* Same background color as front */
+  background-color: ${({ color }) => color};
   color: white;
   display: flex;
   justify-content: center;
@@ -83,6 +83,7 @@ export const SkillList = styled.ul`
 export const SkillItem = styled.li`
   margin: 0.5em 0;
 `;
+
 
 //SkillsGrid.js
 // Styled container for the horizontal layout
