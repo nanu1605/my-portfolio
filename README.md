@@ -29,6 +29,7 @@ This portfolio was built using modern web development technologies and tools. He
   
 - **Deployment:**
   - [Vercel](https://vercel.com/) - Used for deploying the website live on the web
+  - Here is my [portfolio](https://tanishq-jain-portfolio.vercel.app/) deployed on vercel.
   
 ## 🚀 How to Run This Project Locally
 
