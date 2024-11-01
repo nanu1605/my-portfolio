@@ -24,6 +24,12 @@ export const CardContainer = styled.div`
   perspective: 1000px;
   margin: 1.5em;
   cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* Scale effect on hover */
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 // Inner card with conditional rotation and scale effect for flip
@@ -84,9 +90,7 @@ export const SkillItem = styled.li`
   margin: 0.5em 0;
 `;
 
-
 //SkillsGrid.js
-// Styled container for the horizontal layout
 export const HorizontalContainer = styled.div`
   display: flex;
   justify-content: center;
