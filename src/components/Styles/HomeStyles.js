@@ -1,5 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
 
 export const HomeSection = styled.section`
   display: flex;
@@ -8,7 +14,9 @@ export const HomeSection = styled.section`
   justify-content: center;
   align-items: center;
   padding: 4em 2em;
-  background: linear-gradient(135deg, #333, #4ca1af);
+  background: linear-gradient(135deg, #333, #4ca1af, #84b067);
+  background-size: 200% 200%;
+  animation: ${gradientAnimation} 10s ease infinite;
   color: white;
   text-align: center;
   min-height: 100vh;
@@ -16,7 +24,7 @@ export const HomeSection = styled.section`
   overflow: hidden;
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled(motion.h1)`
   font-size: 4em;
   margin-bottom: 0.5em;
 `;
@@ -91,9 +99,9 @@ export const NavButton = styled(motion.div)`
 
 export const FloatingIcon = styled(motion.div)`
   position: absolute;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
 `;
 export const floating = {
   initial: { y: 0 },

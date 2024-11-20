@@ -1,8 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
 
 export const ContactSection = styled.section`
   background: linear-gradient(135deg, #333 0%, #f5f5dc 100%);
+  background-size: 200% 200%;
+  animation: ${gradientAnimation} 10s ease infinite;
   padding: 3em 2em;
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -11,7 +19,7 @@ export const ContactSection = styled.section`
 // Title for the section
 export const Title = styled.h1`
   font-size: 2.5em;
-  color: #fad0c4;
+  color: #333;
   margin-bottom: 1em;
 `;
 
