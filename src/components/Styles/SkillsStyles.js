@@ -1,10 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
 
 //Skills.js
 export const SkillsSection = styled.section`
   // background: linear-gradient(135deg, #333 0%, #F5F5DC 100%);
   background: linear-gradient(135deg, #333 0%, #f5f5dc 100%);
+  background-size: 200% 200%;
+  animation: ${gradientAnimation} 10s ease infinite;
   padding: 4em 2em;
   font-family: "Pacifico", cursive;
   text-align: center;
@@ -12,8 +20,8 @@ export const SkillsSection = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5em;
-  color: #fad0c4;
+  font-size: 3em;
+  color: #333;
   margin-bottom: 1em;
 `;
 

@@ -1,10 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
 
 // Section container
 export const ProjectsSection = styled.section`
   // background: linear-gradient(135deg, #fad0c4 0%, #4ca1af 100%);
   // background: linear-gradient(135deg, #F5F5DC 0%, #333 100%);
   background: linear-gradient(135deg, #f5f5dc 0%, #4ca1af 100%);
+  background-size: 200% 200%;
+  animation: ${gradientAnimation} 10s ease infinite;
   padding: 4em 2em;
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -12,7 +20,7 @@ export const ProjectsSection = styled.section`
 
 // Section title
 export const Title = styled.h1`
-  font-size: 2.5em;
+  font-size: 3em;
   color: #333;
   margin-bottom: 2em;
 `;

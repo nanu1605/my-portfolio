@@ -1,6 +1,12 @@
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 
+const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
+
 export const HomeSection = styled.section`
   display: flex;
   font-family: "Pacifico", cursive;
@@ -8,7 +14,9 @@ export const HomeSection = styled.section`
   justify-content: center;
   align-items: center;
   padding: 4em 2em;
-  background: linear-gradient(135deg, #333, #4ca1af);
+  background: linear-gradient(135deg, #333, #4ca1af, #84b067);
+  background-size: 200% 200%;
+  animation: ${gradientAnimation} 10s ease infinite;
   color: white;
   text-align: center;
   min-height: 100vh;
@@ -16,27 +24,15 @@ export const HomeSection = styled.section`
   overflow: hidden;
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled(motion.h1)`
   font-size: 4em;
   margin-bottom: 0.5em;
-`;
-
-const typing = keyframes`
-  from { width: 0 }
-  to { width: 28% }
-`;
-
-const blink = keyframes`
-  from, to { border-color: transparent }
-  50% { border-color: white; }
 `;
 
 export const HeroSubtitle = styled(motion.p)`
   font-size: 1.5em;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  animation: ${typing} 3.5s steps(40, end), ${blink} 0.75s step-end infinite;
 `;
 
 export const AnimatedPhoto = styled(motion.img)`
@@ -103,9 +99,9 @@ export const NavButton = styled(motion.div)`
 
 export const FloatingIcon = styled(motion.div)`
   position: absolute;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
 `;
 export const floating = {
   initial: { y: 0 },
