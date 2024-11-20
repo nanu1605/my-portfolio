@@ -17,11 +17,18 @@ import Me from "../assets/Me.jpg";
 const Home = () => {
   return (
     <HomeSection>
-      <FloatingIcon style={{ top: '15%', left: '10%' }}>🐳</FloatingIcon> {/* Docker icon */}
-      <FloatingIcon style={{ top: '20%', right: '10%' }}>☁️</FloatingIcon> {/* Cloud icon */}
-      <FloatingIcon style={{ bottom: '15%', left: '15%' }}>⚙️</FloatingIcon> {/* Gear icon */}
-      <FloatingIcon style={{ bottom: '20%', right: '15%' }}>📊</FloatingIcon> {/* Analytics icon */}
-
+      <FloatingIcon style={{ top: "15%", left: "10%" }}>🐳</FloatingIcon>{" "}
+      {/* Docker icon */}
+      <FloatingIcon style={{ top: "20%", right: "10%" }}>☁️</FloatingIcon>{" "}
+      {/* Cloud icon */}
+      <FloatingIcon style={{ bottom: "15%", left: "15%" }}>
+        ⚙️
+      </FloatingIcon>{" "}
+      {/* Gear icon */}
+      <FloatingIcon style={{ bottom: "20%", right: "15%" }}>
+        📊
+      </FloatingIcon>{" "}
+      {/* Analytics icon */}
       <AnimatedPhoto
         src={Me}
         alt="Tanishq Jain"
@@ -30,15 +37,20 @@ const Home = () => {
         variants={floating}
       />
       <HeroTitle>Hi, I'm Tanishq Jain</HeroTitle>
-      <HeroSubtitle>DevOps Engineer | Full-Stack Developer</HeroSubtitle>
+      <HeroSubtitle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        DevOps Engineer | Full-Stack Developer
+      </HeroSubtitle>
       <Quote
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 1 }}
+        transition={{ duration: 2, delay: 1.5 }}
       >
         "Turning ideas into reality through code and automation."
       </Quote>
-
       <ButtonContainer>
         <Link to="about" smooth={true} duration={800}>
           <NavButton>About</NavButton>

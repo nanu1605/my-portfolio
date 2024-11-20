@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const HomeSection = styled.section`
@@ -21,22 +21,10 @@ export const HeroTitle = styled.h1`
   margin-bottom: 0.5em;
 `;
 
-const typing = keyframes`
-  from { width: 0 }
-  to { width: 28% }
-`;
-
-const blink = keyframes`
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-`;
-
 export const HeroSubtitle = styled(motion.p)`
   font-size: 1.5em;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  animation: ${typing} 3.5s steps(40, end), ${blink} 0.75s step-end infinite;
 `;
 
 export const AnimatedPhoto = styled(motion.img)`
