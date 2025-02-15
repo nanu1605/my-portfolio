@@ -18,12 +18,12 @@ const Projects = () => {
         "A virtual try-on experience powered by augmented reality to simulate outfits",
       link: "https://github.com/nanu1605/virtual-dressing-room",
     },
-    {
-      title: "My Portfolio",
-      description:
-        "An interactive and animated developer portfolio showcasing projects, skills, and experience with a modern, responsive design",
-      link: "https://github.com/nanu1605/my-portfolio",
-    },
+    // {
+    //   title: "My Portfolio",
+    //   description:
+    //     "An interactive and animated developer portfolio showcasing projects, skills, and experience with a modern, responsive design",
+    //   link: "https://github.com/nanu1605/my-portfolio",
+    // },
     {
       title: "Attendance System",
       description:

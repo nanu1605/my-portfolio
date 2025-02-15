@@ -19,19 +19,14 @@ const Contact = () => {
       <ContactButton href="/Tanishq_Jain_Resume.pdf" download>
         Download Resume
       </ContactButton>
+      <ContactButton
+        href="https://www.linkedin.com/in/tanishqjain010/"
+        download
+      >
+        LinkedIn
+      </ContactButton>
 
       <ContactInfo>
-        {/* LinkedIn */}
-        <InfoItem>
-          LinkedIn:{" "}
-          <Link
-            href="https://www.linkedin.com/in/tanishqjain010/"
-            target="_blank"
-          >
-            Tanishq Jain
-          </Link>
-        </InfoItem>
-
         {/* Slack Username */}
         <InfoItem>Slack: nanu1605</InfoItem>
 

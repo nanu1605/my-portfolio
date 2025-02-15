@@ -73,7 +73,7 @@ export const ProjectTitle = styled.h3`
 
 // Project description
 export const ProjectDescription = styled.p`
-  font-size: 1em;
+  font-size: 1.3em;
   color: #666;
   margin-bottom: 1em;
   transition: color 0.4s ease;

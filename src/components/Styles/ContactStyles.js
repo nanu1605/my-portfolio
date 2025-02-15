@@ -30,7 +30,7 @@ export const ContactButton = styled.a`
   margin-top: 1em;
   margin-left: 1em;
   font-size: 1.2em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   transition: background-color 0.6s ease, transform 0.3s ease; /* Smooth background-color transition */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;

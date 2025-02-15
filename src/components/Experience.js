@@ -49,7 +49,7 @@ const Experience = () => {
           <Company>
             BOSCH Global Software Technologies, Bangalore, India
           </Company>
-          <Timeline>Jul. 2023 - Present</Timeline>
+          <Timeline>Jul. 2023 - Jan. 2025</Timeline>
           <JobTitle>DevOps Engineer</JobTitle>
           <Description>
             • Architected and maintained CI/CD pipelines, automating testing,

@@ -27,7 +27,7 @@ export const Title = styled.h1`
 `;
 // Animated paragraph
 export const Description = styled(motion.p)`
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.8;
   max-width: 1300px;
   margin: 0 auto;
