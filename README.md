@@ -11,7 +11,7 @@ Welcome to the repository for **Tanishq Jain's Developer Portfolio**! This is a 
 - Full responsiveness across different devices, making the portfolio look great on mobile, tablet, and desktop screens.
 
 ## 🎨 Live Demo
-You can view the live version of my portfolio [here](#).
+You can view the live version of my portfolio [here](https://tanishq-jain-portfolio.vercel.app/).
 
 ## 🔧 Tech Stack
 This portfolio was built using modern web development technologies and tools. Here’s a list of the primary tech stack:
