@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/Tanishq_Jain_Resume.pdf",
+      "destination": "https://tanishq.website/resume.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://tanishq.website/",
+      "permanent": true
+    }
+  ]
+}
